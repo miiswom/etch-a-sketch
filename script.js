@@ -11,8 +11,14 @@ const blocs = document.querySelectorAll('div.grids');
 // div.style.backgroundColor = 'black';
 
 for (const bloc of blocs) {
-    bloc.addEventListener('mouseover', function colorBackground() {
-    bloc.style.backgroundColor = 'black';
+    bloc.addEventListener('mouseover', function colorBackground(e) {
+    bloc.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+", 40)";
 });
-
 }
+
+const prompt = document.getElementById('modal');
+const generateButtton = document.getElementById('generate');
+
+generateButtton.addEventListener('click', function promptUser() {
+
+})

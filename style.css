@@ -23,6 +23,10 @@ h1 {
     height: 20px;
 }
 
+.hidden {
+    display: none;
+}
+
 /* .grids:hover {
     background-color: red;
 } */
