@@ -8,17 +8,12 @@ for(let i=1; i < 257; i++) {
 
 const blocs = document.querySelectorAll('div.grids');
 
-// div.style.backgroundColor = 'black';
+const randColor = () =>  {
+    return "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0').toUpperCase();
+}
 
 for (const bloc of blocs) {
     bloc.addEventListener('mouseover', function colorBackground(e) {
-    bloc.style.backgroundColor = "rgb("+e.offsetX+","+e.offsetY+", 40)";
+    bloc.style.backgroundColor = randColor();
 });
 }
-
-const prompt = document.getElementById('modal');
-const generateButtton = document.getElementById('generate');
-
-generateButtton.addEventListener('click', function promptUser() {
-
-})
