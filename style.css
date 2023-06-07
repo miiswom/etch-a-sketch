@@ -25,9 +25,20 @@
     gap: 5px;
 }
 
-#container {
+.container {
     display: grid;
-    grid-template-columns: repeat(16,20px [col-start]);  
+    grid-template-columns: repeat(16,20px [col-start]);
+    grid-template-rows: repeat(16, 20px);  
+}
+
+.medium-grid {
+    display: grid;
+    grid-template-columns: repeat(32,20px [col-start]);  
+}
+
+.larger-grid {
+    display: grid;
+    grid-template-columns: repeat(64,20px [col-start]);  
 }
 
 #main-container {
@@ -54,10 +65,6 @@ h1 {
     border: 1px black solid;
     width: 20px;
     height: 20px;
-}
-
-.hidden {
-    display: none;
 }
 
 /* .grids:hover {
