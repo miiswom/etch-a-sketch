@@ -4,15 +4,22 @@ const container = document.getElementById('grid-container');
 const mainContainer = document.getElementById('main-container');
 const blocs = document.getElementsByClassName('grids');
 
-for(let i=1; i < 257; i++) {
+for(let i=1; i < 65; i++) {
     let divs = document.createElement('div');
     container.appendChild(divs);
     divs.classList.add('grids');
 };
 
-// function removeOldGrids() {
-//     container.innerHTLM = "";
-//     };
+
+// RESET GRID FUNCTION 
+
+function removeOldGrids() {
+    while(blocs.length > 0) {
+        for(const bloc of blocs) {
+            container.removeChild(bloc)
+        };
+    };
+};
 
 // GENERATE SMALL GRID
 
@@ -21,10 +28,10 @@ const smallGrid = document.getElementById('small-grid');
 smallGrid.addEventListener('click', generateSmallGrid);
 
 function generateSmallGrid() {
-    clearAll();
-    container.classList.remove('large-grid', 'medium-grid', 'small-grid');
+    removeOldGrids();
+    container.classList.remove('larger-grid', 'medium-grid');
     container.classList.add('container');    
-    for(let i=1; i < 257; i++) {
+    for(let i=1; i < 65; i++) {
         let divs = document.createElement('div');
         container.appendChild(divs);
         divs.classList.add('grids');
@@ -39,10 +46,10 @@ const mediumGrid = document.getElementById('medium-grid');
 mediumGrid.addEventListener('click', generateMediumGrid);
 
 function generateMediumGrid() {
-    clearAll();
-    container.classList.remove('container', 'large-grid', 'small-grid');
+    removeOldGrids();
+    container.classList.remove('container', 'larger-grid', 'small-grid');
     container.classList.add('medium-grid');    
-    for(let i=1; i < 1025; i++) {
+    for(let i=1; i < 257; i++) {
         let divs = document.createElement('div');
         container.appendChild(divs);
         divs.classList.add('grids');
@@ -56,16 +63,15 @@ const largeGrid = document.getElementById('large-grid');
 largeGrid.addEventListener('click', generateLargeGrid);
 
 function generateLargeGrid() {
-    clearAll();
+    removeOldGrids();
     container.classList.remove('container', 'medium-grid', 'small-grid');
     container.classList.add('larger-grid');
-    for(let i=1; i < 4097; i++) {
+    for(let i=1; i < 1025; i++) {
         let divs = document.createElement('div');
         container.appendChild(divs);
         divs.classList.add('grids');
     };
 };
-
 
 
 // COLOR IN BLACK
