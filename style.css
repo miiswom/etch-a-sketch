@@ -2,17 +2,50 @@
     box-sizing: border-box;
 }
 
+#parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+#left-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#color-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
 #container {
     display: grid;
     grid-template-columns: repeat(16,20px [col-start]);  
 }
 
-#first-container {
+#main-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    margin: 30px;
+    gap: 5px;
 }
 
+#right-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
 h1 {
     text-align: center;
 }
@@ -30,5 +63,6 @@ h1 {
 /* .grids:hover {
     background-color: red;
 } */
+
 
 
