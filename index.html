@@ -9,36 +9,56 @@
     <title>Etch-A-Sketch</title>
 </head>
 <body>
+    <div id="title">
+        <h1>Etch-A-Sketch</h1>
+    </div>
     <div id="parent-container">
         <div id="left-buttons">
-            <div id="color-container">
-                <button id="black-button">Black</button>
-                <button id="psychedelic-button">Psychedelic</button>
-                <button id="cold-button">Cold</button>
-                <button id="warm-button">Warm</button>
+            <div class="button-layout">
+                <p>Black Mode</p>
+                <button id="black-button"></button>
+            </div>
+            <div class="button-layout">
+                <p>Psychedelic Mode</p>
+                <button id="psychedelic-button"></button>
+            </div>
+            <div class="button-layout">
+                <p>Cold Mode</p>
+                <button id="cold-button"></button>
+            </div>
+            <div class="button-layout">
+                <p>Warm Mode</p>
+                <button id="warm-button"></button>
             </div>
 
-            <button id="erase-button">Erase</button>
-            
-            <button id="clear-button">Clear</button>
+            <div class="button-layout">
+                <p>Erase</p>
+                <button id="erase-button"></button>
+            </div>            
+            <div class="button-layout">
+                <p>Clear</p>
+                <button id="clear-button"></button>
+            </div>
         </div>
         
         <div id="main-container">
-            <div>
-                <h1>Etch-A-Sketch</h1>
-            </div>
-        
             <div id="grid-container" class="container">
             </div>
         </div>
         
         <div id="right-buttons">
-            <button id="small-grid">Small</button>
-
-            <button id="medium-grid">Medium</button>
-
-            <button id="large-grid">Large</button>
-
+            <div class="button-layout">
+                <p>Small</p>
+                <button id="small-grid"></button>
+            </div>
+            <div class="button-layout">
+                <p>Medium</p>
+                <button id="medium-grid"></button>
+            </div>
+            <div class="button-layout">
+                <p>Large</p>
+                <button id="large-grid"></button>
+            </div>
         </div>
     </div>
 </body>

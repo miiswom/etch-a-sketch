@@ -1,5 +1,43 @@
 * {
     box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
+body {
+    margin: 25px; 
+    background-color:lightseagreen;
+}
+
+#title {
+    background-color: indianred;
+    padding: 25px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+
+}
+
+h1 {
+    color: yellow;
+}
+
+button {
+    height: 50px;
+    width: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color:white;
+}
+
+p {
+    text-align: center;
+    width: 100px;
+}
+
+.button-layout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 #parent-container {
@@ -7,6 +45,10 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
+    background-color: indianred;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
 }
 
 #left-buttons {
@@ -62,9 +104,10 @@ h1 {
 }
 
 .grids {
-    border: 1px black solid;
+    border: 1px grey solid;
     width: 20px;
     height: 20px;
+    background-color: lightgray;
 }
 
 /* .grids:hover {
